@@ -81,7 +81,7 @@ const handleLogin = (e) => {
   login.style.display = "none";
   chat.style.display = "flex";
 
-  webSocket = new WebSocket("ws://localhost:8080");
+  webSocket = new WebSocket("wss://fake-chat-api.onrender.com");
   webSocket.onmessage = processMessage;
 };
 
